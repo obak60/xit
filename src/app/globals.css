@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Bengali:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  @apply bg-white dark:bg-dark text-white dark:text-dark font-primary;
+}
+
+
+/* Remove arrows in Chrome, Safari, Edge */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Remove arrows in Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+/* scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;    /* Firefox */
+}
+
+/* button css */
+.button{
+  @apply bg-primary w-fit px-10 capitalize py-2 text-xs sm:text-sm text-white hover:bg-dark hover:text-light dark:hover:bg-light dark:hover:text-dark duration-300;
+}
+.icon-button {
+  @apply relative flex items-center justify-center w-10 h-10 rounded-full border-2 border-light hover:bg-dark text-white duration-300;
+}
+
+/* ------ section css ------ */
+.section-padding{
+  @apply py-6 md:py-10;
+}
+.section-heading{
+  @apply text-dark dark:text-light text-2xl md:text-4xl font-bold text-center pb-3 md:pb-5 uppercase;
+}
+
+/* ------ input css ------ */
+.input{
+  @apply bg-light dark:bg-dark hover:bg-light dark:hover:bg-dark px-3 py-[6px] text-dark dark:text-light border border-slate-300 dark:border-slate-600 rounded-sm mt-1;
+}
+.input::placeholder{
+  @apply text-dark dark:text-light opacity-65;
+}
+
+
+
