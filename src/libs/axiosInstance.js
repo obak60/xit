@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseURL = 'https://soft.shiulifashion.com/api/v1';
+const baseURL = 'https://admin.shiulifashion.com/api/v1';
 
 // Public Axios Instance (No authentication)
 export const axiosPublic = axios.create({

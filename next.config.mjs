@@ -4,7 +4,7 @@ const nextConfig = {
         remotePatterns: [
             {
                 protocol: "https",
-                hostname: "soft.shiulifashion.com",
+                hostname: "admin.shiulifashion.com",
             },
             {
                 protocol: "https",
