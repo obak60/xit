@@ -54,11 +54,14 @@ const CartDesktop = ({ openCart, setOpenCart }) => {
     return (
         <div>
             {/* Cart button */}
-            <button
-                onClick={() => setOpenCart(true)}
-                className={`hidden md:block `}>
-                <FaCartShopping className='text-2xl text-primary' />
-            </button>
+            <div className='hidden md:block relative'>
+                <button onClick={() => setOpenCart(true)}>
+                    <FaCartShopping className='text-2xl text-primary pt-1' />
+                </button>
+                <div className='absolute -top-[5px] -right-[8px] px-[5px] !h-4 flex justify-center items-center bg-secondary text-light rounded-full text-[11px]'>
+                    {cart?.length}
+                </div>
+            </div>
 
             {/* Cart content */}
             <div
